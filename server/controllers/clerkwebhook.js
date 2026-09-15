@@ -1,6 +1,6 @@
 const User = require("../models/user.js");
 
-const webhook =require("svix");
+const {webhook} = import("svix");
 
 const clerkWebhooks= async (req,res)=>{
     try {
