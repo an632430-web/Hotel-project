@@ -2,8 +2,8 @@ const express=require("express");
 require("dotenv").config();
 const cors = require("cors");
 const connectDB=require("./configs/DB");
-import { clerkMiddleware } from '@clerk/express'
-import clerkWebhooks from './controllers/clerkwebhook';
+const {clerkMiddleware} = require('@clerk/express');
+const clerkWebhooks = require('./controllers/clerkwebhook');
 
 const app=express();
 

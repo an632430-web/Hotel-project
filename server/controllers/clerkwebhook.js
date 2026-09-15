@@ -1,6 +1,6 @@
-import User from "../models/user.js";
+const User = require("../models/user.js");
 
-import {webhook} from "svix";
+const webhook =require("svix");
 
 const clerkWebhooks= async (req,res)=>{
     try {
@@ -50,4 +50,4 @@ const clerkWebhooks= async (req,res)=>{
 }
 
 
-export default clerkWebhooks
+ module.exports = clerkWebhooks;
